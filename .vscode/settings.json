@@ -1,0 +1,25 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.associations": {
+        "deps_init.c": "cpp",
+        "mgos_bme280.h": "c",
+        "winuser.h": "c",
+        "main.cpp": "c",
+        "mgos_vfs.h": "c",
+        "nb30.h": "c",
+        "mongoose.h": "c",
+        "initializer_list": "cpp",
+        "xutility": "cpp",
+        "mgos_mongoose.h": "c",
+        "stdint.h": "c",
+        "platform_types.h": "c",
+        "platform_wince.h": "c",
+        "platform_windows.h": "c",
+        "mgos_onewire.h": "c",
+        "mgos_bitbang.h": "c",
+        "mgos_gpio.h": "c",
+        "xkeycheck.h": "c",
+        "wincrypt.h": "c",
+        "mgos_app.h": "c"
+    }
+}

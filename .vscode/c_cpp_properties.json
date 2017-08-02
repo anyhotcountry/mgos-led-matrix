@@ -1,0 +1,75 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceRoot}",
+                "/usr/include",
+                "/usr/local/include"
+            ],
+            "defines": [],
+            "browse": {
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "intelliSenseMode": "clang-x64"
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceRoot}",
+                "/usr/include",
+                "/usr/local/include"
+            ],
+            "defines": [],
+            "browse": {
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "intelliSenseMode": "clang-x64"
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceRoot}",
+                "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/*",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.14393.0/um",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.14393.0/ucrt",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.14393.0/shared",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.14393.0/winrt"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE"
+            ],
+            "browse": {
+                "path": [
+                    "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/*",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.14393.0/um",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.14393.0/ucrt",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.14393.0/shared",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.14393.0/winrt",
+                    "C:/Users/Chris/Source/Repos/mongoose-os",
+                    "C:/Users/Chris/Source/Repos/arduino-drivers/Adafruit-GFX-Library",
+                    "C:/Users/Chris/Source/Repos/arduino-drivers/Adafruit_SSD1306",
+                    "C:/Users/Chris/Source/Repos/arduino-drivers/Arduino",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "intelliSenseMode": "msvc-x64"
+        }
+    ],
+    "version": 2
+}
