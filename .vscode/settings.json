@@ -20,6 +20,7 @@
         "mgos_gpio.h": "c",
         "xkeycheck.h": "c",
         "wincrypt.h": "c",
-        "mgos_app.h": "c"
+        "mgos_app.h": "c",
+        "iosfwd": "c"
     }
 }
