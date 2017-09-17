@@ -1,7 +1,7 @@
 {
     "version": "0.1.0",
     "command": "mos",
-    "args": ["build", "--arch", "esp32"],
+    "args": ["build", "--arch", "esp8266"],
     "problemMatcher": {
         "owner": "cpp",
         "fileLocation": ["relative", "${workspaceRoot}"],

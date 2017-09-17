@@ -4,8 +4,8 @@
 #include "mgos_gpio.h"
 #include "fw/src/mgos_timers.h"
 
-#define PIN 23
-#define LEDS 240
+#define PIN 14
+#define LEDS 450
 
 // Total number of channels you want to receive (1 led = 3 channels)
 #define NUMBER_OF_CHANNELS LEDS * 3

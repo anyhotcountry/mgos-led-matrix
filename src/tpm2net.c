@@ -1,8 +1,9 @@
 #include "tpm2net.h"
+#define UNUSED(x) (void)(x)
 
 static dmx_callback_t dmx_callback;
 
-void parse(char *packet, size_t length)
+void parse(char *packet, uint16_t length)
 {
   if (packet && length >= 6 && packet[0] == 0x9C)
   {
@@ -27,11 +28,14 @@ void handler(struct mg_connection *nc, int ev, void *ev_data,
   switch (ev)
   {
   case MG_EV_RECV:
-    parse(io->buf, io->len);
+    parse(io->buf, (uint16_t)io->len);
     break;
   default:
     break;
   }
+
+  UNUSED(ev_data);
+  UNUSED(user_data);
 }
 
 void mgos_tpm2net_init(dmx_callback_t callback)
