@@ -5,18 +5,12 @@
 #include "fw/src/mgos_timers.h"
 
 #define PIN 14
-#define LEDS 450
 
-// Total number of channels you want to receive (1 led = 3 channels)
-#define NUMBER_OF_CHANNELS LEDS * 3
-
-uint8_t leds[NUMBER_OF_CHANNELS];
-
-void show()
+void show(uint16_t length, uint8_t *leds)
 {
   mgos_gpio_write(PIN, false);
   mgos_usleep(60);
-  mgos_bitbang_write_bits(PIN, MGOS_DELAY_100NSEC, 3, 8, 7, 6, leds, LEDS * 3);
+  mgos_bitbang_write_bits(PIN, MGOS_DELAY_100NSEC, 3, 8, 7, 6, leds, length);
   mgos_gpio_write(PIN, false);
   mgos_usleep(60);
   mgos_gpio_write(PIN, true);
@@ -24,12 +18,7 @@ void show()
 
 void on_dmx_frame(uint16_t length, char *data)
 {
-  for (int i = 0; i < length && i < NUMBER_OF_CHANNELS; i++)
-  {
-    leds[i] = (uint8_t)data[i];
-  }
-
-  show();
+  show(length, (uint8_t *)data);
 }
 
 enum mgos_app_init_result mgos_app_init(void)
@@ -38,3 +27,4 @@ enum mgos_app_init_result mgos_app_init(void)
   mgos_tpm2net_init(on_dmx_frame);
   return MGOS_APP_INIT_SUCCESS;
 }
+
